@@ -19,7 +19,26 @@ if (s1.length == s2.length) {
             b[s2[i].charCodeAt(0)]++;
         }
     }
+    
+    a.sort();
+    b.sort();
     console.log(a);
     console.log(b);
+    
+    var k = 0;
+    var printed = 0;
+    while(b[k] != null) {
+        if (a[k] > b[k]) {
+            console.log("false");
+            printed = 1;
+            break;
+        }
+        k++;
+    }
+    if (printed == 0)
+        console.log("true");
 
+} else {
+    console.log("false");
 }
+
