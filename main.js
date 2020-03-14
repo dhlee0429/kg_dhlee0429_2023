@@ -1,3 +1,11 @@
+/* It was not perfectly clear whether the question was asking about
+ * a one-to-one mapping regardless of the order or a way of a substitution cipher
+ * due to the lack of examples.
+ * i.e., if s1 = aba, s2 = xxz, should it be true? Or should it be false?
+ * If we map a-x and b-z, this should be perfectly fine.
+ * Therefore by logical inference, I chose to solve this problem for former case.
+ */ 
+
 try {
     var s1 = process.argv[2];
     var s2 = process.argv[3];
